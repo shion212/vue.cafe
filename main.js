@@ -19,7 +19,7 @@ $(function(){
 
     //ロード画面を非表示にする関数
     function HideLoadingScreen(){
-        $load.delay(5000).fadeOut("slow");
+        $load.delay(1200).fadeOut("slow");
     }
 }); 
 
