@@ -1,0 +1,326 @@
+.component {
+  width: 50vw;
+  height: 50vh;
+  background: rgba(255, 0, 0, 0.25)
+}
+html {
+  font-size: 16px;
+ 
+  @media (min-width: 600px) {
+    font-size: 18px;
+  }
+ 
+  @media (min-width: 800px) {
+    font-size: 20px;
+  }
+}
+ 
+html {
+  font-size: 16px;
+ 
+  @media (min-width: 800px) {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width:961px) {
+    /*pc用のcssを記述*/
+    }
+      
+    @media only screen and (min-width:376px) and (max-width:960px) {
+    /*tablet用のcssを記述*/
+    }
+     
+    @media screen and (max-width:375px) {
+    /*スマホ用のcssを記述*/
+    }
+    img {max-width:100%; width /***/:auto; /*IE8用ハック*/} /*画像サイズが横幅に合わせて可変します*/
+
+    @media screen and (min-width:376px) {
+        .sp_contents {display:none;} /*横幅376px以上では表示しない*/
+        }
+
+
+        #load_animation {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 100;
+            background-color: #262626;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+          }
+          
+          #load_animation .icon {
+            padding: 50px 0;
+          }
+          
+          #load_animation .icon img {
+            width: 30vh;
+            height: auto;
+            display: none;
+          }
+          
+          #load_animation .loading_gif {
+            padding: 500px 0;
+          }
+          
+          #load_animation .loading_gif img {
+            width: 120vh;
+            height: auto;
+            display: none;
+          }
+          
+          /*# sourceMappingURL=styles.css.map */
+          body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 100%;
+            background-color: #75A9FF;
+        }
+        
+        #nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        #nav > ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        #nav > ul > li > a {
+            display: block;
+            height: auto;
+            padding: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        #nav > ul > li > span {
+            position: relative;
+            display: block;
+            height: auto;
+            padding: 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        #nav > ul > li > span:after {
+            content: '▼';
+            display: inline-block;
+        
+        }
+        
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            padding: 0;
+            list-style-type: none;
+            background-color: #000000;
+        }
+        
+        .dropdown li {
+            width: 250px;
+            border-bottom: 1px solid #fff;
+        }
+        
+        .dropdown li a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .isOpen {
+            display: block;
+        }
+
+        #app{
+            line-height:1.5;
+            text-align:center;
+            font-size:150%;
+            padding: 0.5em;/*文字周りの余白*/
+            color: #494949;/*文字色*/
+            background: #fffaf4;/*背景色*/
+            border-left: solid 5px #7db4e5;/*左線（実線 太さ 色）*/
+        }
+        p{
+            text-align: center;
+
+        }
+        
+
+        .demoTxt {
+              display: block;
+              font-size: 24px;
+              font-weight: bold;
+              text-align: center;
+            }
+            .demoTxt span {
+              opacity: 0;
+              -webkit-transition: .6s ease-in-out;
+              transition: .6s ease-in-out;
+            }
+
+            #app-1{
+              padding: 1rem 2rem;
+              background: lightgray;
+              width:300px; height:150px;
+              margin:5px; padding:10px; border:1px solid black;
+              line-height:2.0em;
+              margin:auto;
+              
+            }
+
+            #app-2{
+              margin:auto;
+              font-size:120%;
+              border-left: solid 5px #7db4e6;/*左線*/
+              max-width: 500px;
+            }
+
+            #app-3{
+              margin:auto;
+              font-size:120%;
+              border-left: solid 5px #7db4e5;
+              max-width: 500px;
+            }
+
+
+
+            .cp_cssslider {
+              width: 300px;
+              height: 200px;
+              overflow: hidden;
+              margin: 2em auto;
+              border: 10px solid #ffffff;
+              box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+            }
+            .cp_slide_item {
+              width: 300px;
+              height: 200px;
+              float: left;
+              position: relative;
+            }
+            .cp_slidewrapper {
+              width: 500%;/* slideの枚数×100% */
+              position: relative;
+              left: 0;
+              animation: slider 20s infinite ease;/* スピード */
+            }
+            @-webkit-keyframes slider {
+              /* 100%を枚数で割った%に割り振る */
+              0% {
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+              }
+              20% {
+              -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+              }
+              40% {
+              -webkit-transform: translateX(-600px);
+              transform: translateX(-600px);
+              }
+              60% {
+              -webkit-transform: translateX(-900px);
+              transform: translateX(-900px);
+              }
+              80% {
+              -webkit-transform: translateX(-1200px);
+              transform: translateX(-1200px);
+              }
+              100% {
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+              }
+            }
+            @keyframes slider {
+              /* 100%を枚数で割った%に割り振る */
+              0% {
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+              }
+              20% {
+              -webkit-transform: translateX(-300px);
+              transform: translateX(-300px);
+              }
+              40% {
+              -webkit-transform: translateX(-600px);
+              transform: translateX(-600px);
+              }
+              60% {
+              -webkit-transform: translateX(-900px);
+              transform: translateX(-900px);
+              }
+              80% {
+              -webkit-transform: translateX(-1200px);
+              transform: translateX(-1200px);
+              }
+              100% {
+              -webkit-transform: translateX(0);
+              transform: translateX(0);
+              }
+            }
+
+
+            #menu{
+              background: #BAD3FF;
+              box-shadow: 0px 0px 0px 5px #dfefff;
+              border: dashed 2px white;
+              padding: 0.2em 0.5em;
+              text-align: justify;
+              text-justify: inter-ideograph;
+               width: 350px;
+               margin:auto;
+            }
+
+
+            #app-4{
+              margin:auto;
+              font-size:120%;
+              border-left: solid 5px #7db4e5;
+              max-width: 500px;
+            }
+
+            #app-5{
+              margin:auto;
+              font-size:150%;
+              border-left: solid 5px #7db4e5;
+              max-width: 500px;
+            }
+            #app-6{
+              text-align:center;
+              font-size:110%;
+              margin:5px; padding:10px; border:1px solid black;
+            }
+
+
+
+
+
+           

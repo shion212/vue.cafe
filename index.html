@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>長野でおすすめのカフェ☕️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<!--最小限のビューポート設定-->
+<meta name="viewport" content="width=device-width">
+
+<div id="load_animation">
+  <div class="loading_gif">
+    <img src="welcome13.gif" alt="">
+  </div>
+</div>
+  <div>
+  <header>
+    <nav id="nav">
+      <ul>
+        <li v-for="item in items">
+          <a :href="item.url" v-if="!item.children">
+            {{ item.name }}
+          </a>
+          <span v-else v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
+            {{ item.name }}
+            <ul class="dropdown" :class="{ isOpen }">
+              <li v-for="child in item.children">
+                <a :href="child.url">
+                  {{ child.name }}
+                </a>
+              </li>
+            </ul>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<br>
+<br>
+
+
+
+  <div id="app">
+     {{ message }}
+    </div>
+  <br>
+    <p>長野でおすすめのカフェをご紹介します。</br>本格的なコーヒーが味わえるカフェ、一人でゆったり過ごせるカフェまで揃っていますよ✨</br>おしゃれなカフェを知りたい方必見です！</p>
+
+
+<br>
+    <div id="app-1">
+      <ul>
+          <li v-for="val in aryList">{{ val }}</li>
+      </ul>
+  </div>
+
+<br>
+<div id="app-2">
+  {{message}}
+</div>
+
+
+
+
+<div class="cp_cssslider">
+	<div class="cp_slidewrapper">
+		<div class="cp_slide_item"><img src="d0124812_13390405.jpg"></div>
+		<div class="cp_slide_item"><img src="d0124812_13320172.jpg"></div>
+		<div class="cp_slide_item"><img src="d0124812_13233376.jpg"></div>
+		<div class="cp_slide_item"><img src="d0124812_11060284.jpg"></div>
+		<div class="cp_slide_item"><img src="fc2_2015-07-07_19-13-12-634.jpg"></div>
+	</div>
+</div>
+
+  
+<p>2枚目<br>「プレートごはん￥1200」<br></p>
+
+<p>3枚目<br>「いちごのロールケーキ￥500」</p>
+
+<p>4枚目<br>「金柑とごまのタルト￥450」</p>
+
+
+
+<br>
+
+<nav id="menu">
+  <p>住所 〒380-0823 長野県長野市南千歳２丁目１５−２０</p>
+  <p>電話番号 026-226-8710</p>
+  <p>お店の営業時間 11:３0～13:30 13:30~14:30</p>
+  <p>定休日 不定休</p>
+  <a href="https://gaucheblog.exblog.jp/">公式HP https://gaucheblog.exblog.jp/</a>
+  <p></p>
+</nav>
+
+<br>
+
+<div id="app-3">
+  {{message}}
+</div>
+
+<div class="cp_cssslider">
+	<div class="cp_slidewrapper">
+		<div class="cp_slide_item"><img src="e9f3c22c6a6a96556702e735ad806046.jpg"></div>
+		<div class="cp_slide_item"><img src="318a563afeaad86db45b8957d64bf07e.jpg"></div>
+		<div class="cp_slide_item"><img src="640x640_rect_111050092 (1).jpg"></div>
+		<div class="cp_slide_item"><img src="640x640_rect_136560913.jpg"></div>
+		<div class="cp_slide_item"><img src="IMG_6048.jpg"></div>
+	</div>
+</div>
+
+<p>2枚目<br>「かき氷　ピスタチオとラズベリー」<br>（中）￥1,000円、（小）￥800円。</p>
+<p>3枚目<br>「一汁三菜も取れるほっけ定食」　<br>¥980円</p>
+<p>4枚目<br>「胡麻かぼちゃ金時1」<br>(￥1000円)</p>
+
+<nav id="menu">
+  <p>住所 〒380-0833 長野県長野市 権堂町2390-1</p>
+  <p>026-225-9197</p>
+  <p>お店の営業時間
+  平日11:30-15:00
+  18:00-21:00
+  土日祝日
+  11:30-21:00
+</p>
+  <p>定休日 水、木曜日</p>
+  
+  <p></p>
+</nav>
+<br>
+
+<div id="app-4">
+  {{message}}
+</div>
+
+<div class="cp_cssslider">
+	<div class="cp_slidewrapper">
+		<div class="cp_slide_item"><img src="640x640_rect_127904664.jpg"></div>
+		<div class="cp_slide_item"><img src="640x640_rect_119108882.jpg"></div>
+		<div class="cp_slide_item"><img src="151312511002080632178_20171209-IMG_7862.jpg"></div>
+		<div class="cp_slide_item"><img src="640x640_rect_119108887.jpg"></div>
+		<div class="cp_slide_item"><img src="P3020448-520x390.jpg"></div>
+	</div>
+</div>
+
+<p>2枚目<br>「新小路ワッフル」¥500円</p>
+<p>3枚目<br> 「鶏肉のカレーソテー　タルタル掛け」¥800円</p>
+<p>4枚目<br>「カフェモカ（ホット）」¥420円</p>
+
+<nav id="menu">
+  <p>住所 380-0831長野県長野市東町142-2 1F</p>
+  <p>電話番号 026-217-0170</p>
+  <p>お店の営業時間 10:00～17:00（ランチタイム11:30～14:00、ティータイム14:00～17:00）</p>
+  <p>定休日 月曜日・第2火曜日・第4火曜日</p>
+  <a href="http://rifare-web.com/">公式HP http://rifare-web.com/</a>
+  <p></p>
+</nav>
+<br>
+<br>
+<div id="app-5">
+{{message}}
+</div>
+
+<p>いかがでしたか？<br>今回は、長野でのおすすめのカフェをご紹介しました。<br>もちろん、今回ご紹介させていただいたカフェ以外にも<br>たくさん魅力なカフェがたくさんあります。<br>自分だけのお気に入りのカフェをを見つけよう！</p>
+<br>
+
+
+
+
+<div class="footer">
+  <footer>
+    <div class="container">
+      <p>@Shion Iwamura</p>
+    </div>
+      </footer>
+  </div>
+
+
+
+
+
+
+
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+var nav = new Vue({
+  el: '#nav',
+  data: {
+    isOpen: false,
+    items: [
+      {
+        url: '#',
+        name: 'Home'
+      },
+      {
+        url: 'https://instagram.com/s.iwmr?igshid=1rtl8gpzez7rz',
+        name: 'SNS'
+      },
+      {
+         url: '#',
+         name: 'Cafe',
+         children: [
+           {
+             url: 'https://gaucheblog.exblog.jp/',
+             name: 'gauche'
+            },
+            {
+              url: 'https://www.instagram.com/@polka.cafe2390',
+              name: 'polka.'
+            },
+            {
+              url: 'http://rifare-web.com/',
+              name: 'shinkoji'
+            },
+          ]
+        },
+        {
+          url: 'https://shion212.github.io/cafe.contact/',
+          name: 'Contact'
+        }
+      ]
+    },
+
+    methods: {
+        mouseover: function () {
+            this.isOpen = true;
+        },
+        mouseleave: function () {
+            this.isOpen = false;
+        }
+    }
+});
+
+</script>
+
+<script>
+  var app = new Vue({
+  el: '#app',
+  data: {
+    message: '長野でおすすめのカフェ3選！'
+  }
+})
+</script>
+
+<script>
+new Vue({
+    el: '#app-1',
+    data: {
+        aryList : ['cafe&bar　ゴーシュ', 'Polka Dot Cafe　ポルカドットカフェ', 'SHINKOJICAFE　新小路カフェ'],
+    }
+});
+  </script>
+
+  <script>
+   var app = new Vue({
+  el: '#app-2',
+  data: {
+    message: '1.長野市の裏路地にひっそりある『cafe&barゴーシュ』'
+  }
+})
+  </script>
+
+
+<script>
+
+</script>
+
+
+
+ <script>
+ var app = new Vue({
+  el: '#app-3',
+  data: {
+    message: '2.古家をリノベーションしたカフェ [Polka Dot Cafeポルがドットカフェ]'
+  }
+})
+
+ </script>
+
+
+
+
+<script>
+  var app = new Vue({
+    el: '#app-4',
+    data: {
+      message: '3.3人の主婦が作る家庭的なメニュー「新小路カフェ」'
+    }
+  })
+</script>
+
+
+
+<script>
+  var app = new Vue({
+    el: '#app-5',
+    data: {
+      message: '長野でゆっくりカフェタイムを楽しもう！'
+    }
+  })
+</script>
+  
+
+
+</body>
+</html>
